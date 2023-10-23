@@ -58,7 +58,6 @@ a{
 }
 .nav > a{
     font-size: 24px;
-
 }
 .header-logo-par{
     font-family: var(--menu-font);
@@ -362,6 +361,74 @@ object-fit: cover;
         margin-bottom: 25px;
     }
 
-    @media all and{
-        
+    @media all and  (max-width:800px){ 
+        nav{
+            flex-direction: column;
+            justify-content: start;
+        }
+        .hero{
+            flex-direction: column;
+            justify-content: center;
+        }
+        h1{
+           font-size: 36px;
+        }
+       
+        .nav > a{
+            font-size: 20px;
+          
+        }
+       .hero-content, .hero-input{
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .hero-content>*{
+           padding: 10px;
+        }
+        .button{
+           margin-top: 10px;
+       }
+        .contact__parr-form{
+            flex-direction: column;
+            justify-content: center;
+     }
+     
+.contact__title h2, .catalog__title h2{
+    font-size: 24px;
+}
+   
+.inp-form, textarea, .btn {
+    width: 350px;
+    margin: 10px;
+        }
+        @keyframes fixedMenu{
+            0%{
+                height: 0;
+            }
+            50%{
+                height: 130px;
+            }
+            100%{
+                height: 115px;
+            }
+        }
+    }
+    @media all and  (max-width:500px){ 
+ img{
+            width: 250px;
+        }
+ h1{
+    font-size: 24px;
+}
+.contact__title h2, .catalog__title h2{
+    font-size: 24px;
+}
+.hero-input input {
+    width: 250px;
+ }
+.inp-form, textarea, .btn {
+    width: 250px;
+    margin: 10px;
+} 
     }
